@@ -1,20 +1,75 @@
-# FUTURE_ML_01
+# 📈 Sales Forecasting Dashboard
 
-A Python-based sales forecasting dashboard using time series and regression analysis with interactive visualizations.
+This project is an interactive Streamlit dashboard for forecasting sales trends using historical data. It combines **Facebook Prophet** for time series forecasting and **Linear Regression** for trend analysis.
 
-## 📈 Sales Forecasting Dashboard (Python Only)
+---
 
-A Python-based sales forecasting dashboard using time series forecasting and regression analysis with interactive visualizations.
+## 🔧 Features
 
-### 🔧 Tools & Libraries
-- Python: `Prophet`, `scikit-learn`, `pandas`, `matplotlib`, `plotly`
-- OS: Developed on macOS
+- Upload your own CSV file (`Date`, `Sales`)
+- Forecast future sales using Prophet
+- Visualize seasonality components (weekly, monthly trends)
+- Analyze sales trend using linear regression
+- Interactive UI via Streamlit
 
-### 📊 Dataset
-Retail sales data (daily, weekly, or monthly) including date and sales values.
+---
 
-### 🚀 Features
-- Forecast future sales using Facebook Prophet
-- Identify trends, seasonality, and anomalies
-- Visualize actual vs. predicted values using Matplotlib/Plotly
-- Interactive Jupyter Notebook interface
+## 🖥️ Sample Screenshots
+
+### 🔮 Prophet Forecast Plot
+![Forecast Plot](prophet_forecast_plot.png)
+
+### 📊 Forecast Components (Trend & Seasonality)
+![Forecast Components](forecast_components.png)
+
+### 📉 Regression MSE
+![MSE](Regression_MSE.png)
+
+### 📈 Sales Trend Analysis with Linear Regression
+![Linear Regression](linear_regression_trend.png)
+
+---
+
+## 🗂️ How to Run
+
+### 1. Clone the repository
+```bash
+git clone https://github.com/yourusername/sales-forecast-dashboard.git
+cd sales-forecast-dashboard
+```
+
+### 2. Install dependencies
+```bash
+pip install -r requirements.txt
+```
+
+### 3. Run the Streamlit app
+```bash
+streamlit run app.py
+```
+
+---
+
+## 🧪 Sample Data Format
+
+```
+Date,Sales
+2023-01-01,200
+2023-01-02,210
+...
+```
+
+You can use the included `sample_sales_data.csv` to try it out quickly.
+
+---
+
+## 📦 Tech Stack
+
+- **Python**
+- **Streamlit**
+- **Prophet**
+- **scikit-learn**
+- **matplotlib**
+- **pandas**
+
+---
